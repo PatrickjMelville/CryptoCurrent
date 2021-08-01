@@ -1,0 +1,410 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, .Board {
+    background-color: #17253F  
+}
+
+.content {
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+}
+
+.predictions {
+    text-align: center;
+    background: linear-gradient(0deg, rgba(23,37,63,1) 30%, rgba(17,17,17,1) 99%);
+    display: flex;
+}
+
+.predictions-content {
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    width: 97%;
+}
+
+.predictions-content p {
+    padding-top: 1em;
+    font-size: 12.5px;
+    text-align: center;
+}
+
+.future-prediction h4 {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.plot {
+    padding: 2em 0em 0.25em 0em;
+    text-align: center;
+}
+
+.plot p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.plot h1 {
+    padding-bottom: 0em;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.robot_predictions {
+    display: inline-block;
+    height: 500px;
+    width: 350px;
+    margin-left: -27em;
+    padding: 1em 0em 0em 0em;
+    margin-top: 17em;
+}
+
+.coin-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+    color: #fff;
+}
+  
+.search-bar {
+    padding-top: 0em;
+    padding-left: 30em;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.coin-text {
+    margin-bottom: 32px;
+    text-align: center;
+}
+  
+.search-input {
+    padding-left: 16px;
+    width: 600px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background-image: #fff;
+    color: #222;
+    font-size: 18px;
+}
+  
+.coin-input::placeholder {
+    color: #222;
+}
+
+.coin-container {
+    display: flex;
+    justify-content: center;
+}
+
+.coin-row {
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid #fff;
+    width: 900px;
+}
+
+.coin {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    min-width: 300px;
+}
+
+.coin h1 {
+    font-size: 15.5px;
+    width: 150px;
+}
+
+.coin img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.symbol {
+    text-transform: uppercase;
+}
+
+.coin-data {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.price {
+    width: 110px;
+}
+
+.volume {
+    width: 200px;
+}
+
+.marketcap {
+    width: 240px;
+}
+
+.percent-change {
+    width: 80px;
+}
+
+.red {
+    color: #f00606;
+}
+
+.green {
+    color: #11d811;
+}
+
+.title {
+    color: #fff;
+    display: flex;
+    padding: 3.5em 0em 5em 0em;
+    text-align: center;
+}
+
+.main_info {
+    display: flex;
+    background: linear-gradient(0deg, rgba(23,37,63,1) 30%, rgba(17,17,17,1) 99%);
+}
+
+.robot {
+    display: inline-block;
+    height: 380px;
+    width: 310px;
+    padding-top: 2em;
+    margin-left: 8em;
+    margin-bottom: 2em;
+}
+
+
+.title h1 {
+    text-align: center;
+    padding-left: 9em;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 55px;
+}
+
+.title h2 {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 85px;
+}
+
+.info {
+    display: inline-block;
+}
+
+.info p {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1.5em;
+    padding-left: 20em;
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar {
+    background-color: #111 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+  
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 73px;
+    max-width: 1500px;
+}
+  
+.navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: -3em;
+    margin-top: -13px;
+    cursor: pointer;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+}
+
+.navbar-logo h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 42px;
+}
+
+.navbar-logo:hover {
+    color: #fff;
+    text-shadow: 2px 2px 5px #338BD6 
+}
+  
+.fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+}
+  
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 0em;
+}
+  
+.nav-item {
+    height: 73px;
+}
+  
+.nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    font-family: 'Orbitron', sans-serif;
+}
+  
+.nav-links:hover {
+    border-bottom: 3.5px solid #fff;
+    transition: all 0.2s ease-out;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .navbar-logo {
+        color: #fff;
+        justify-self: start;
+        margin-left: -2em;
+        margin-top: -13px;
+        cursor: pointer;
+        text-decoration: none !important;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar-logo h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 10px;
+    }
+    
+    .navbar-logo h2 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 27px;
+    }
+
+    .nav-links {
+        font-size: 15px !important;
+    }
+
+    .robot {
+        display: none !important;
+        padding: 0;
+        margin: 0;
+    }
+
+    .robot_predictions {
+        display: none !important;
+        padding: 0;
+        margin: 0;
+    }
+            
+    .title h1 {
+        text-align: center;
+        padding-left: 6em;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 40px;
+    }
+    
+    .title h2 {
+        font-size: 70px;
+    }
+    
+    .info p {
+        padding-bottom: 1.5em;
+        padding-left: 8em;
+        font-size: 23px;
+    }
+    
+    .search-bar {
+        padding-top: 0em;
+        padding-left: 10em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .robot {
+        display: none !important;
+        padding: 0;
+        margin: 0;
+    }
+
+    .robot_predictions {
+        display: none !important;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .title h1 {
+        text-align: center;
+        padding-left: 1em;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 40px;
+    }
+    
+    .title h2 {
+        font-size: 70px;
+    }
+    
+    .info p {
+        padding-bottom: 1em;
+        padding-left: 0em;
+        font-size: 18px;
+        margin-right: 6em;
+    }
+
+    .search-bar {
+        padding-top: 1em;
+        padding-left: 0em;
+    }
+
+    .plot img {
+        width: 400px;
+    }
+}
+  
