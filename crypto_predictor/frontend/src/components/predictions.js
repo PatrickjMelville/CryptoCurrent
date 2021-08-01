@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { csv } from 'd3';
+//import { csv } from 'd3';
 import data from '../../../predictions.csv'
 
 
